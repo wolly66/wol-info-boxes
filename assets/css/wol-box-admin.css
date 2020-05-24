@@ -1,0 +1,59 @@
+/*
+ * CSS for ADMIN Wol Info Boxes
+ *
+ */
+
+.wol-admin-box{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	height: 100%;
+	min-height: 50px;
+	overflow: auto;
+	display: flex;
+	align-items: baseline;
+}
+
+.wol-admin-radio{
+	font-size: 1.0em;
+	flex: 1;
+	padding: 1em;
+	text-align: left;
+}
+
+.wol-admin-shortcode {
+	font-size: 1em;
+	flex: 1;
+	padding: 1em 1.5em;
+}
+
+
+.radio-group input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  color: rgb(0, 0, 255, 0.4);
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+.radio-group input[type=radio]:checked + label{
+  color: rgb(255, 255, 255, 1);
+  background: rgb(0, 0, 255, 1);
+}
+
+.radio-group label + input[type=radio] + label {
+  border-left: solid 3px rgb(0, 0, 255, 0.2);
+}
+.radio-group {
+  border: solid 3px rgb(0, 0, 255, 1);
+  display: inline-block;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
